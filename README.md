@@ -6,4 +6,6 @@ USER SESSION MANAGEMENT AND PROFILING:
 TASK MANAGEMENT: The user can see his incomplete and completed tasks and toggle the menu to either mark an incomplete task as done or delete a completed task completely all of which are connected to the admin django side and changes done by the user will be reflected on the backend. This works through a call from the frontend to the API endpoint in the django backend which removes the item from the database.
 
 ADMIN SIDE MANAGEMENT: username: divyanshu password: 123
-the admin after logging in through localhost:8000/admin can assign tasks with description, edit these tasks or delete them himself
+the admin after logging in through localhost:8000/admin can assign tasks with description, edit these tasks or delete them himself which will be reflected on the frontend through API calls, also in the actions dropdown menu the admin can choose to export the data of all the tasks as csv file and download which is implemented using the csv module in the admins.py file to add this functionality to actions menu and write a csv from the data available.
+
+
